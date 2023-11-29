@@ -1,0 +1,23 @@
+<% layout("layouts/boilerplate")  -%>
+
+<div class="row mt-3">
+    <div class="login col-6 offset-3 container mx-auto w-90">
+        <h1 class="login-heading mt-4 mb-4 pb-4">Login - <i class="fa-brands fa-airbnb"></i> <span>airbnb</span> </h1>
+        <form action="/login" method="POST" class="needs-validation" novalidate>
+            <div class="mt-4">
+                <label for="username" class="form-label">Username</label>
+                <input type ="text" name = "username" id="username" class="form-control" required>
+                <div class="invalid-feedback">Please Enter Username</div>
+            </div>
+            
+            <div class="mt-4">
+                <label for="password" class="form-label">Password</label>
+                <input type ="password" name = "password" id="password" class="form-control" required>
+                <div class="invalid-feedback">Please Enter Password</div>
+            </div>
+            <button class="btn btn-dark add-btn mt-4 px-4">
+                Login
+            </button>        
+        </form>
+    </div>
+</div>

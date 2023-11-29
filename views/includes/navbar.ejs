@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-4" href="/listings"><i class="fa-brands fa-airbnb"></i> <span>airbnb</span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto px-4 py-4">
+          <form class=" search-bar form-inline">
+            <input class="form-control mr-sm-2 search-bar-inp" type="search" placeholder="Search Destinations" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link setup" href="/listings/new"><i class="fa-regular fa-square-plus"></i><span> Airbnb Setup</span> </a>
+          <% if(!currUser){ %>
+          <a class="nav-link signup" href="/signup"> <i class="fa-solid fa-user-plus"></i> <h3>Signup</h3></a>
+          <a class="nav-link login " href="/login"><i class="fa-solid fa-user"></i> <h3>Login</h3></a>
+          <% } %>
+          <%  if(currUser){ %>
+          <a class="nav-link logout" href="/logout"><i class="fa-solid fa-user-slash"></i> <h3>Logout</h3></a>
+          <% } %>
+        </div>
+       </div>
+       </div>
+  </nav>

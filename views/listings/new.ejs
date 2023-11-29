@@ -1,0 +1,48 @@
+<% layout("layouts/boilerplate")  -%>
+
+<body>
+    <h2 class="mt-4 mb-4">Create a New Listing</h2>
+    <form method="POST" action="/listings" novalidate class="needs-validation container mx-auto w-90" enctype="multipart/form-data">
+        <div class=" input mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input required type="text" name = "listing[title]" placeholder="Enter Title" class="form-control">
+            <div class="valid-feedback">Title looks Good!</div>
+            <div class="invalid-feedback">Please Enter Title</div>
+        </div>
+    
+        <div class=" input mb-3" >
+            <label for="desc" class="form-label">Description</label>
+            <textarea required name="listing[desc]" class="form-control"></textarea>
+            <div class="invalid-feedback">Please Enter Desciption</div>
+        </div>
+    
+        <div class=" input mb-3">
+            <label for="image" class="form-label">Upload Image</label>
+            <input type="file" name = "listing[image]" class="form-control" required>
+        </div>
+    
+        <div class="row">
+            <div class=" input mb-3 col-md-4">
+                <label for="price" class="form-label">Price</label>
+                <input required type="number" name = "listing[price]" placeholder="Enter Price" class="form-control">
+               <div class="invalid-feedback">Please Enter Price</div>
+            </div>
+        
+            <div class="  input mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+                <input required type="text" name = "listing[country]" placeholder="Enter Country" class="form-control">
+               <div class="invalid-feedback">Please Enter Country</div>
+            </div>
+        </div>
+        
+        <div class=" input mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input required type="text" name = "listing[location]" placeholder="Enter Location" class="form-control">
+            <div class="invalid-feedback">Please Enter Location</div>
+
+        </div>       
+    <br>
+        <button class="btn btn-dark px-4 py-2  input mb-3 add-btn">Add</button>
+        
+    </form>
+</body>

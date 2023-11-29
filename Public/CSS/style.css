@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background: white;
+}
+
+.fa-airbnb{
+    font-size: 2rem;
+    color: #fe424d;
+}
+
+.navbar-brand span{
+    color: #fe424d;
+    font-weight: bold;
+}
+
+.navbar-nav .search-bar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.search-bar .search-bar-inp {
+    border-radius: 3rem;
+    font-size: 0.9rem;
+    width: 18rem;
+}
+
+.navbar-nav button,.navbar-nav button:hover {
+    margin-left: 0.5rem;
+    background-color: #fe424d;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 50%;
+}
+
+.setup i{
+    color: #fe424d;
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+
+ .nav-link h3{
+    color: black;
+    margin-left: 1rem;
+    font-size: 1rem; 
+
+}
+
+.nav-link h3:hover{
+    font-weight: bold;
+}
+
+.signup i, .login i{
+    font-size: 1rem;
+    color: black;
+}
+
+
+#navbarNavAltMarkup{
+    background-color: white !important;
+    text-align: center;
+}
+
+@media(max-width : 775px){
+    .navbar-nav .search-bar{
+        display: none;
+    }
+}
+
+.nav-link  span{
+    color: #fe424d; 
+    display: block;
+}
+
+.nav-link span:hover{
+    
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #222 !important;
+}
+
+
+
+/* listings- navbarrrrrrrrr  */
+
+#filters{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter{
+    text-align: center;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    opacity: 0.7;  
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#filters .active{
+    text-align: center;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    opacity: 1;
+    border-bottom :2px solid black;
+}
+.filter:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-bottom :2px solid black;
+}
+
+.filter p{
+    font-size: 0.8rem;
+}
+
+.tax-info{
+    display: none;
+}
+
+.form-check-input:hover{
+    cursor: pointer;
+}
+
+.tax-toggle{
+    border: 1px solid #09091c5c;
+    border-radius: 1rem;
+    padding: 1rem;    
+    display: flex;
+    align-items: center;
+}
+.tax-toggle:hover{
+    border: 1px solid black;
+}
+
+/* footer-------------------------------------- */
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    background: #ece8e893;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.f-info-socials , .f-info-links{
+    width: 100%;
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222;
+}
+
+.f-info-links a{
+    text-decoration: underline;
+}
+
+
+/* cards-------------------------------- */
+
+.row-listing{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: auto;  */
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+
+@media (max-width: 1400px){
+    .row-listing{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .card{
+        width: 18rem !important; 
+    }
+}
+
+
+@media (max-width: 1400px){
+    .row-listing{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .card{
+        width: 18rem !important; 
+    }
+}
+@media (max-width: 1290px){
+    .row-listing{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .card{
+        width: 22rem !important; 
+    }
+}
+
+@media (max-width: 1210px){
+    .row-listing{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .card{
+        width: 18rem !important; 
+    }
+}
+@media (max-width: 1018px){
+    .row-listing{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .card{
+        width: 16rem !important; 
+    }
+}
+@media (max-width: 914px){
+    .row-listing{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card{
+        width: 20rem !important; 
+    }
+}
+@media (max-width: 770px){
+    .row-listing{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card{
+        width: 18rem !important; 
+    }
+}
+@media (max-width: 676px){
+    .row-listing{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .card{
+        width: 16rem !important; 
+    }
+}
+@media (max-width: 552px){
+    .row-listing{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .card{
+        width: 22rem !important; 
+    }
+}
+
+.card{
+    border: none !important;
+    margin-bottom: 3rem !important;
+    
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+} 
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.1;
+    background: white;
+}
+
+
+/* new listing------------------------- */
+
+.add-btn, .edit-btn, .delete-btn{
+    background: #fe424d !important;
+    border: none !important;
+}
+
+
+
+/* show listing ----------------------- */
+
+.show-data{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+
+.show-data .card{
+    width: 100% !important;
+}
+
+.card-text .heading{
+    font-size: 1.5rem;
+}
+
+.show-img{
+    height: 70vh;
+}
+
+.btn-col .editt-btn{
+    background: #fe424d !important;
+    border: none !important;
+    width: 6.3rem;
+}
+
+.btn-col .editt-btn a{
+    color: white;
+    text-decoration: none;
+   
+}
+
+/* reviews: --------------------------------*/
+
+.reviews-box .card{
+    border-bottom: 1px solid #afaaaa !important;
+}
+
+.reviews-box .card .card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviews-box .card .card-text{
+    border-left: 2px solid black;
+    padding-left: 1rem;
+    padding-right: 3rem;
+    margin-left: 1rem;
+    height: auto;
+    width: auto;
+}
+
+.reviews-box .card .card-text p{
+    font-size: .9rem;
+}
+
+/* map---------------------------------- */
+
+.map h5 .map-location-span{
+    color: #c2156b;
+    font-size: 1rem;
+}
+
+
+/* signup and login ----------------------- */
+
+.login .login-heading i , .signup .signup-heading i {
+    font-size: 2.5rem;
+    color: #fe424d;
+}
+.login .login-heading span, .signup .signup-heading span {
+    font-size: 2rem;
+    color: #fe424d;
+    font-weight: bold;
+}
