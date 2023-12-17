@@ -46,5 +46,3 @@
   
 ## Contributing
 🤝 Feel free to contribute to this project by submitting pull requests.
-
-🤝 Feel free to contribute to this project by submitting pull requests.
